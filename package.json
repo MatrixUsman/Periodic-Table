@@ -1,0 +1,23 @@
+{
+  "name": "periodic_table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build-css": "node-sass style.sass -o public",
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Usman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodejs": "0.0.0",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
