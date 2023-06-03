@@ -3,7 +3,13 @@ html
   head
     title Periodic Table
     link(rel="stylesheet" href="/style.css")
+    script.
+      function toggleMode() {
+        var body = document.querySelector('body');
+        body.classList.toggle('dark-mode');
+      }
   body 
+      button(onclick="toggleMode()") 🌙
 - var categories = ['alkali-metals','alkaline-earth-metals','lanthanoids','actinoids','transition-metals','post-transition-metals','metalloids','other-nonmetals','noble-gasses','unknown']
 
 
