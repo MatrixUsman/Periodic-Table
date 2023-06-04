@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build-css": "node-sass style.sass -o public",
+    "build-css": "node-sass src/style.sass -o public",
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
