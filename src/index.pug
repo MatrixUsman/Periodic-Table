@@ -3,13 +3,7 @@ html
   head
     title Periodic Table
     link(rel="stylesheet" href="/style.css")
-    script.
-      function toggleMode() {
-        var body = document.querySelector('body');
-        body.classList.toggle('dark-mode');
-      }
   body 
-      button(onclick="toggleMode()") 🌙
 - var categories = ['alkali-metals','alkaline-earth-metals','lanthanoids','actinoids','transition-metals','post-transition-metals','metalloids','other-nonmetals','noble-gasses','unknown']
 
 
@@ -45,7 +39,7 @@ mixin placeholder(number, material, column, row)
     input.category-toggle(type='radio', id=item, name='categories')
     input.category-cancel(type='radio', id='cancel' name='categories')
   .periodic-table
-    +element(1, 'H', 'Hydrogen', 1.008, [1], 'other-nonmetal', 1, 1)
+    +element(1, 'H', 'Hydrogen', 1.008, [1], 'other-nonmetal', 1, 1) // Element number, symbol, name, mass, weight, material, column, row
     +element(2, 'He', 'Helium', 4.0026, [2], 'noble-gas', 18, 1)
     +element(3, 'Li', 'Lithium', 6.94, [3], 'alkali-metal', 1, 2)
     +element(4, 'Be', 'Beryllium', 9.0122, [2,2], 'alkaline-earth-metal', 2, 2)
@@ -69,7 +63,7 @@ mixin placeholder(number, material, column, row)
     +element(22, 'Ti', 'Titanium', 47.867, [2,8,10,2], 'transition-metal', 4, 4)
     +element(23, 'V', 'Vanadium', 50.942, [2,8,11,2], 'transition-metal', 5, 4)
     +element(24, 'Cr', 'Chromium', 51.996, [2,8,13,1], 'transition-metal', 6, 4)
-    +element(25, 'Mn', 'Manganese', 54.938, [2,8,13,2], 'transition-metal', 7, 4)
+    +element(25, 'Mn', 'Manganese', 54.938, [2,8,13,2], 'transition-metal', 7, 4) 
     +element(26, 'Fe', 'Iron', 55.845, [2,8,14,2], 'transition-metal', 8, 4)
     +element(27, 'Co', 'Cobalt', 58.933, [2,8,15,2], 'transition-metal', 9, 4)
     +element(28, 'Ni', 'Nickel', 58.693, [2,8,16,2], 'transition-metal', 10, 4)
